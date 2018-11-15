@@ -1,0 +1,21 @@
+<!-- By Andy Nguyen -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Semi Restful Users - Show Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>User <span>{{ user.id }}</span></h1>
+        <p>Full Name: <span>{{user.first_name}} {{user.last_name}}</span></p>
+        <p>Email: <span>{{user.email}}</span></p>
+        <p>Created at: <span>{{user.created_at}}</span></p>
+        <p><a href="/users/{{user.id}}/edit">Edit</a> | <a href="/users/{{user.id}}/destroy">Delete</a></p>
+        <p><a href="/users">Go Back</a></p>
+    </div>
+</body>
+</html>
